@@ -1,0 +1,7 @@
+﻿CREATE TABLE Studenti
+(
+	Broj_Indexa VARCHAR NOT NULL PRIMARY KEY,
+	Ime VARCHAR NOT NULL,
+	Prezime VARCHAR NOT NULL
+
+)
