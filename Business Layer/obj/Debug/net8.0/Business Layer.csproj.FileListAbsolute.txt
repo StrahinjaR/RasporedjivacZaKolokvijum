@@ -5,7 +5,14 @@ C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Bus
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.AssemblyInfoInputs.cache
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.AssemblyInfo.cs
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.csproj.CoreCompileInputs.cache
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.sourcelink.json
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.dll
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\refint\Business Layer.dll
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.pdb
 C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\ref\Business Layer.dll
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.csproj.AssemblyReference.cache
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\bin\Debug\net8.0\Data Layer.dll
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\bin\Debug\net8.0\Shared.dll
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\bin\Debug\net8.0\Data Layer.pdb
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\bin\Debug\net8.0\Shared.pdb
+C:\Users\Relja\source\repos\WindowsFormsApp1\Business Layer\obj\Debug\net8.0\Business Layer.csproj.CopyComplete
