@@ -20,5 +20,9 @@ namespace Business_Layer
         {
             return upisaniPredmet.GetUpisanPredmets();
         }
+        public List<UpisanPredmet>GetUpisane(String a)
+        {
+            return upisaniPredmet.GetUpisane(a);
+        }
     }
 }

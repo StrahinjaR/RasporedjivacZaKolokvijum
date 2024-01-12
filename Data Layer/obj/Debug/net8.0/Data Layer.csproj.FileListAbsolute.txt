@@ -14,3 +14,19 @@ C:\Users\Relja\source\repos\WindowsFormsApp1\Data Layer\obj\Debug\net8.0\Data La
 C:\Users\Relja\source\repos\WindowsFormsApp1\Data Layer\obj\Debug\net8.0\refint\Data Layer.dll
 C:\Users\Relja\source\repos\WindowsFormsApp1\Data Layer\obj\Debug\net8.0\Data Layer.pdb
 C:\Users\Relja\source\repos\WindowsFormsApp1\Data Layer\obj\Debug\net8.0\ref\Data Layer.dll
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.deps.json
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.dll
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.pdb
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Shared.dll
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Shared.pdb
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.AssemblyReference.cache
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.AssemblyInfoInputs.cache
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.AssemblyInfo.cs
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.CoreCompileInputs.cache
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.sourcelink.json
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.CopyComplete
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.dll
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\refint\Data Layer.dll
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.pdb
+C:\Users\Strahinja\Desktop\New folder\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\ref\Data Layer.dll

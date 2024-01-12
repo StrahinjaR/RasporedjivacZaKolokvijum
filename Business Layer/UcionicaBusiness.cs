@@ -19,6 +19,12 @@ namespace Business_Layer
         public List<Ucionica> GetUcionicas()
         {
             return ucionica.GetUcionicas();
+
+        }
+        public List<Ucionica> GetTips(String a)
+        {
+            return ucionica.GetTips(a);
         }
     }
 }
+    

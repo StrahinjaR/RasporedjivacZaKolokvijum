@@ -9,7 +9,7 @@ namespace Shared.Models
     public class UpisanPredmet
     {
         public int Id { get; set; }
-        public int STUDENT_ID { get; set; }
+        public string STUDENT_ID { get; set; }
         public int PREDMET_ID { get; set; }
     }
 }

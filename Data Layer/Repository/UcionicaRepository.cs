@@ -49,7 +49,40 @@ namespace Data_Layer.Repository
             sqlConnection.Close();
 
             return listOfItems;
-        }
 
+
+
+        }
+        public List<Shared.Models.Ucionica> GetTips(String textBoxValue)
+        {
+
+            SqlConnection sqlConnection = new SqlConnection(Constants.connString);
+            // sqlConnection.ConnectionString = Constants.connectionString;
+            sqlConnection.Open();
+
+            SqlCommand sqlCommand = sqlConnection.CreateCommand();
+            sqlCommand.Connection = sqlConnection;
+            sqlCommand.CommandText = "SELECT Broj_Ucionice FROM Ucionice WHERE Racunaraska = @Tip";
+            sqlCommand.Parameters.AddWithValue("@Tip", textBoxValue);
+
+            SqlDataReader dataReader = sqlCommand.ExecuteReader();
+
+            List<Shared.Models.Ucionica> listOfItems = new List<Shared.Models.Ucionica>();
+
+            while (dataReader.Read())
+            {
+                Shared.Models.Ucionica item = new Shared.Models.Ucionica();
+
+                item.Id = dataReader.GetInt32(0);
+
+
+                listOfItems.Add(item);
+            }
+
+            sqlConnection.Close();
+
+            return listOfItems;
+        }
     }
+
 }
