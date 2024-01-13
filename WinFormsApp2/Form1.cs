@@ -24,11 +24,11 @@ namespace WinFormsApp2
         string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=tes;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
         SqlConnection dataConnection = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
-        
+
 
         public Form1()
         {
-            
+
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             InitializeComponent();
             student = new StudentBusiness();
@@ -84,7 +84,7 @@ namespace WinFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
- 
+
 
             RefereshListBox();
             GetUkupn(textBox1.Text);
@@ -107,28 +107,29 @@ namespace WinFormsApp2
             int i = 0;
             List<Student> lista = new List<Student>();
 
-            try { 
-            if (tip.ToLower() == "da")
+            try
             {
+                if (tip.ToLower() == "da")
+                {
                     text = "Racunarska ";
-                brojac = 15;
-                    
+                    brojac = 15;
 
-            }
-            else if (tip.ToLower() == "ne")
-            {
-                     text = "Ucionica ";
+
+                }
+                else if (tip.ToLower() == "ne")
+                {
+                    text = "Ucionica ";
                     brojac = 20;
-        
+
 
                 }
             }
-            catch(Exception ex) { MessageBox.Show($"Error: {ex.Message}"); }
-            
+            catch (Exception ex) { MessageBox.Show($"Error: {ex.Message}"); }
+
             if (ukupno / 2 > brojac)
                 neophodno = 3;
             else neophodno = 2;
-            broj =  ukupno / neophodno;
+            broj = ukupno / neophodno;
             int mat = (int)Math.Ceiling(broj);
             foreach (var a in listofUps)
             {
@@ -138,35 +139,35 @@ namespace WinFormsApp2
                     Student ustudenti = new Student();
                     if (a.STUDENT_ID == items.Broj_Indexa)
                     {
-                     ustudenti.Broj_Indexa = items.Broj_Indexa;
-                     ustudenti.Ime = items.Ime;
-                     ustudenti.Prezime = items.Prezime;
-                     lista.Add(ustudenti);
+                        ustudenti.Broj_Indexa = items.Broj_Indexa;
+                        ustudenti.Ime = items.Ime;
+                        ustudenti.Prezime = items.Prezime;
+                        lista.Add(ustudenti);
                     }
-                    
+
                 }
- 
+
             }
 
             foreach (var item in listOfTips.Take(neophodno))
             {
                 listBox1.Items.Add(text + item.Id);
-                
+
 
                 foreach (var a in lista.Skip(i).Take(mat))
                 {
-                    
-                    listBox1.Items.Add(a.Broj_Indexa + " " +  a.Ime + " "+ a.Prezime);
+
+                    listBox1.Items.Add(a.Broj_Indexa + " " + a.Ime + " " + a.Prezime);
                     i++;
-                    
+
 
                 }
 
             }
 
-            ExportToExcel(neophodno,listOfTips,lista, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "Raspored.xlsx"));
+            ExportToExcel(neophodno, listOfTips, lista, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "Raspored.xlsx"));
         }
-        void ExportToExcel(int neophodno, List<Ucionica> listofTips,List<Student> listOfItems, string FilePath)
+        void ExportToExcel(int neophodno, List<Ucionica> listofTips, List<Student> listOfItems, string FilePath)
         {
             var excelPackage = new ExcelPackage();
             var worksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");
@@ -183,7 +184,7 @@ namespace WinFormsApp2
             int row = 2;
             foreach (var i in listofTips.Take(neophodno))
             {
-                
+
                 foreach (var item in listOfItems)
                 {
                     worksheet.Cells[row, 1].Value = item.Broj_Indexa;
@@ -206,7 +207,7 @@ namespace WinFormsApp2
         public int GetUkupn(String a)
         {
             return this.predmet.Ukupno(a);
-            
+
         }
         public List<Ucionica> GetTips(String a)
 
@@ -226,6 +227,14 @@ namespace WinFormsApp2
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Prozor3 secondForm = new Prozor3();
+
+
+            secondForm.Show();
         }
     }
 }

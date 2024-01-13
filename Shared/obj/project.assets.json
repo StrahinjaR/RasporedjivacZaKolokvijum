@@ -1559,11 +1559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\Strahinja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Strahinja\\AppData\\Roaming\\NuGet\\NuGet.Config",

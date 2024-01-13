@@ -1622,11 +1622,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
       "packagesPath": "C:\\Users\\Strahinja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\WinFormsApp2\\obj\\",
+      "outputPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Strahinja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1643,14 +1643,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
+            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
+              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
             },
-            "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
+            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
+              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
             },
-            "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
+            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
             }
           }
         }

@@ -1579,11 +1579,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj",
+      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj",
       "projectName": "Data Layer",
-      "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj",
+      "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj",
       "packagesPath": "C:\\Users\\Strahinja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Data Layer\\obj\\",
+      "outputPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Strahinja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1600,8 +1600,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
+            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
             }
           }
         }

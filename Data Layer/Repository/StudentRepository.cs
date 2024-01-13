@@ -52,5 +52,29 @@ namespace Data_Layer.Repository
 
             return listOfItems;
         }
+        public int CreateStudent(Student student)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("INSERT INTO Studenti VALUES('{0}','{1}','{2}')",
+                    student.Broj_Indexa, student.Ime, student.Prezime);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+        public int DeleteStudent(Student student)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("DELETE FROM STUDENTI WHERE Broj_Indexa=@brojindexa");
+                sqlCommand.Parameters.AddWithValue("@brojindexa", student.Broj_Indexa);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aSHNOM7/aAYh6jUf0XugLOYosDcn1olStgbBibp4riHk0xojEhLqfAXFWVNoGJDDsmoFsvqsdGObQnZj9q1Teg==",
+  "dgSpecHash": "C8paKbztkj2Byd7b4inKoyi7A8wjFkXkCHnrJyqgX5UoR8LgFqufYyhDwGVPX++pFMDZhKR2L3ae8ChuSqocdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
+  "projectFilePath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Strahinja\\.nuget\\packages\\epplus\\7.0.5\\epplus.7.0.5.nupkg.sha512",
     "C:\\Users\\Strahinja\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",

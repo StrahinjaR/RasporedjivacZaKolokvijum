@@ -5,15 +5,21 @@ namespace Business_Layer
 {
     public class StudentBusiness
     {
-        StudentRepository student;
+        StudentRepository StudentRepo;
         public StudentBusiness()
         {
-            student = new StudentRepository();
+            StudentRepo = new StudentRepository();
         }
 
         public List<Student> GetStudents()
         {
-            return student.GetStudents();
+            return StudentRepo.GetStudents();
         }
+        public int AddStudent(Student student)
+        {
+            return StudentRepo.CreateStudent(student);
+        }
+        public int DeleteStudent(Student student)
+        {  return StudentRepo.DeleteStudent(student);}
     }
 }

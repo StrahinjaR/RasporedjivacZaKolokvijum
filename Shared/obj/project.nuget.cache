@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WcNodsEj1Rg+dCJc4LVk3jvbjEfqS3HvsKuoRA59KdY6sw6hvKp/r0ArDQXRg2Vfp8njQww+LJy/50rOL753Hw==",
+  "dgSpecHash": "NN1TqXhJZ+qp24peo9v3qAxajovXUt3ndciA+vU9V7L/vMrZmVMzorAYmtwt6CaARAGqnBX0pOrnih8OyxOxTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Strahinja\\Desktop\\New folder\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Strahinja\\.nuget\\packages\\epplus\\7.0.5\\epplus.7.0.5.nupkg.sha512",
     "C:\\Users\\Strahinja\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
