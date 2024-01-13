@@ -75,6 +75,31 @@ namespace Data_Layer.Repository
 
             return ukupno;
         }
+
+        public int CreatePredmet(Shared.Models.Predmet predmet)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("INSERT INTO PREDMETI VALUES({0},'{1}',{2})",
+                    predmet.Id, predmet.Naziv_Predmeta, predmet.Broj_Studenta);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+        public int DeletePredmet(Shared.Models.Predmet predmet)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("DELETE FROM PREDMETI WHERE Id=@id");
+                sqlCommand.Parameters.AddWithValue("@id", predmet.Id);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
 

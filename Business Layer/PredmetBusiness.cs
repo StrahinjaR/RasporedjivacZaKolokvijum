@@ -10,20 +10,27 @@ namespace Business_Layer
 {
     public class PredmetBusiness
     {
-        Data_Layer.Repository.Predmet predmet;
+        Data_Layer.Repository.Predmet predmetRepo;
         public PredmetBusiness()
         {
-            predmet = new Data_Layer.Repository.Predmet();
+            predmetRepo = new Data_Layer.Repository.Predmet();
         }
 
         public List<Shared.Models.Predmet> GetPredmets()
         {
-            return predmet.GetPredmets();
+            return predmetRepo.GetPredmets();
         }
         public int Ukupno(String a)
         {
-            return predmet.GetUkupno(a);
+            return predmetRepo.GetUkupno(a);
         }
+
+        public int CreatePredmet(Shared.Models.Predmet predmet)
+        {
+            return predmetRepo.CreatePredmet(predmet);
+        }
+        public int DeletePredmet(Shared.Models.Predmet predmet)
+        { return predmetRepo.DeletePredmet(predmet); }
     }
 }
 

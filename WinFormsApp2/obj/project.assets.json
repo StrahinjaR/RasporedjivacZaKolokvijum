@@ -1617,19 +1617,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Strahinja\\.nuget\\packages\\": {}
+    "C:\\Users\\Acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
-      "packagesPath": "C:\\Users\\Strahinja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\WinFormsApp2\\obj\\",
+      "projectPath": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\WinFormsApp2\\WinFormsApp2.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\WinFormsApp2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Strahinja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1643,14 +1643,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
+            "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
             },
-            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
+            "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
             },
-            "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Strahinja\\Desktop\\Finalna verzija projekta\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
+            "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\FINAL\\si2023-projekat-tim-vrs\\Shared\\Shared.csproj"
             }
           }
         }
@@ -1685,12 +1685,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.0, 8.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -1699,7 +1693,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

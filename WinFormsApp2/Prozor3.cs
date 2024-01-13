@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,31 @@ namespace WinFormsApp2
             InitializeComponent();
         }
         StudentBusiness StudentBiznis = new StudentBusiness();
+        PredmetBusiness PredmetBiznis = new PredmetBusiness();
+
+        private void Prozor3_Load(object sender, EventArgs e)
+        {
+            refreshListBox();
+        }
+
+        public void refreshListBox()
+        {
+            listBox1.Items.Clear();
+            foreach (Student student in StudentBiznis.GetStudents())
+            {
+
+                listBox1.Items.Add($"{student.Broj_Indexa}  {student.Ime}  {student.Prezime}");
+
+            }
+
+            listBox2.Items.Clear();
+            foreach (Shared.Models.Predmet predmet in PredmetBiznis.GetPredmets())
+            {
+
+                listBox2.Items.Add($"{predmet.Id}  {predmet.Naziv_Predmeta} - {predmet.Broj_Studenta}");
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Student student = new Student()
@@ -29,7 +55,7 @@ namespace WinFormsApp2
                 Prezime = textBox3.Text
             };
             StudentBiznis.AddStudent(student);
-
+            refreshListBox();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,6 +65,39 @@ namespace WinFormsApp2
                 Broj_Indexa = textBox1.Text,
             };
             StudentBiznis.DeleteStudent(student);
+            refreshListBox();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Shared.Models.Predmet predmet = new Shared.Models.Predmet()
+            {
+                Id = Convert.ToInt32(textBox6.Text),
+                Naziv_Predmeta = textBox5.Text,
+                Broj_Studenta = Convert.ToInt32(textBox4.Text)
+            };
+            PredmetBiznis.CreatePredmet(predmet);
+            refreshListBox();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Shared.Models.Predmet predmet = new Shared.Models.Predmet()
+            {
+                Id = Convert.ToInt32(textBox6.Text),
+            };
+            PredmetBiznis.DeletePredmet(predmet);
+            refreshListBox();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

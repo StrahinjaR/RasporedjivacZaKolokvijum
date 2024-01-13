@@ -47,6 +47,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(270, 229);
             listBox1.TabIndex = 3;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // button1
             // 

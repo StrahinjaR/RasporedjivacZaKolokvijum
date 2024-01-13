@@ -44,6 +44,8 @@
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             textBox6 = new TextBox();
+            listBox1 = new ListBox();
+            listBox2 = new ListBox();
             SuspendLayout();
             // 
             // textBox1
@@ -72,27 +74,27 @@
             label1.AutoSize = true;
             label1.Location = new Point(55, 63);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(71, 15);
             label1.TabIndex = 3;
-            label1.Text = "label1";
+            label1.Text = "Broj indeksa";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(55, 100);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(27, 15);
             label2.TabIndex = 4;
-            label2.Text = "label2";
+            label2.Text = "Ime";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(55, 135);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(49, 15);
             label3.TabIndex = 5;
-            label3.Text = "label3";
+            label3.Text = "Prezime";
             // 
             // button1
             // 
@@ -100,7 +102,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
-            button1.Text = "Unos";
+            button1.Text = "Dodaj";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -110,7 +112,7 @@
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 7;
-            button2.Text = "button2";
+            button2.Text = "Ukloni";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -120,8 +122,9 @@
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 15;
-            button3.Text = "button3";
+            button3.Text = "Ukloni";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -129,35 +132,36 @@
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 14;
-            button4.Text = "button4";
+            button4.Text = "Dodaj";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(456, 135);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(83, 15);
             label4.TabIndex = 13;
-            label4.Text = "label4";
+            label4.Text = "Broj studenata";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(456, 100);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(90, 15);
             label5.TabIndex = 12;
-            label5.Text = "label5";
+            label5.Text = "Naziv predmeta";
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Location = new Point(456, 63);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(17, 15);
             label6.TabIndex = 11;
-            label6.Text = "label6";
+            label6.Text = "Id";
             // 
             // textBox4
             // 
@@ -179,12 +183,34 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(100, 23);
             textBox6.TabIndex = 8;
+            textBox6.TextChanged += textBox6_TextChanged;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(55, 235);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(278, 154);
+            listBox1.TabIndex = 16;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 15;
+            listBox2.Location = new Point(456, 235);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(278, 154);
+            listBox2.TabIndex = 17;
             // 
             // Prozor3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listBox2);
+            Controls.Add(listBox1);
             Controls.Add(button3);
             Controls.Add(button4);
             Controls.Add(label4);
@@ -202,7 +228,8 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "Prozor3";
-            Text = "Prozor3";
+            Text = "Admin view";
+            Load += Prozor3_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -225,5 +252,7 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private TextBox textBox6;
+        private ListBox listBox1;
+        private ListBox listBox2;
     }
 }
