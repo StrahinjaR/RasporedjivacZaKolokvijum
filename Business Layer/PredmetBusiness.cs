@@ -31,6 +31,11 @@ namespace Business_Layer
         }
         public int DeletePredmet(Shared.Models.Predmet predmet)
         { return predmetRepo.DeletePredmet(predmet); }
+
+        public int UpdatePredmet(Shared.Models.Predmet predmet)
+        {
+            return predmetRepo.UpdatePredmet(predmet);
+        }
     }
 }
 

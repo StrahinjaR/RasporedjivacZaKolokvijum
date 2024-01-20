@@ -21,5 +21,10 @@ namespace Business_Layer
         }
         public int DeleteStudent(Student student)
         {  return StudentRepo.DeleteStudent(student);}
+
+        public int UpdateStudent(Student student)
+        {
+            return StudentRepo.UpdateStudent(student);
+        }
     }
 }

@@ -100,6 +100,21 @@ namespace Data_Layer.Repository
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public int UpdatePredmet(Shared.Models.Predmet predmet)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("UPDATE PREDMETI SET Naziv_Predmeta=@naziv, Broj_Studenata=@broj WHERE Id=@id");
+                sqlCommand.Parameters.AddWithValue("@naziv", predmet.Naziv_Predmeta);
+                sqlCommand.Parameters.AddWithValue("@broj", predmet.Broj_Studenta);
+                sqlCommand.Parameters.AddWithValue("@id", predmet.Id);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
 

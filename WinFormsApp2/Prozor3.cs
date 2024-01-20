@@ -45,6 +45,13 @@ namespace WinFormsApp2
                 listBox2.Items.Add($"{predmet.Id}  {predmet.Naziv_Predmeta} - {predmet.Broj_Studenta}");
 
             }
+
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox3.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            textBox5.Text = string.Empty;
+            textBox6.Text = string.Empty;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -98,6 +105,30 @@ namespace WinFormsApp2
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Student student = new Student()
+            {
+                Broj_Indexa = textBox1.Text,
+                Ime = textBox2.Text,
+                Prezime = textBox3.Text
+            };
+            StudentBiznis.UpdateStudent(student);
+            refreshListBox();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Predmet predmet = new Predmet()
+            {
+                Id = int.Parse(textBox6.Text),
+                Naziv_Predmeta = textBox5.Text,
+                Broj_Studenta = int.Parse(textBox4.Text)
+            };
+            PredmetBiznis.UpdatePredmet(predmet);
+            refreshListBox();
         }
     }
 }

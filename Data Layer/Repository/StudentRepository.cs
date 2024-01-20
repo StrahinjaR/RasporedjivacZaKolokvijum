@@ -76,5 +76,20 @@ namespace Data_Layer.Repository
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public int UpdateStudent(Student student)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("UPDATE STUDENTI SET Ime=@ime, Prezime=@prezime WHERE Broj_Indexa=@brojindexa");
+                sqlCommand.Parameters.AddWithValue("@ime", student.Ime);
+                sqlCommand.Parameters.AddWithValue("@prezime",student.Prezime);
+                sqlCommand.Parameters.AddWithValue("@brojindexa",student.Broj_Indexa);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }

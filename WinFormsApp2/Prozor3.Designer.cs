@@ -46,6 +46,8 @@
             textBox6 = new TextBox();
             listBox1 = new ListBox();
             listBox2 = new ListBox();
+            button5 = new Button();
+            button6 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -98,7 +100,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(69, 202);
+            button1.Location = new Point(55, 202);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 6;
@@ -108,7 +110,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(202, 202);
+            button2.Location = new Point(156, 202);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 7;
@@ -118,7 +120,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(603, 202);
+            button3.Location = new Point(558, 202);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 15;
@@ -128,7 +130,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(470, 202);
+            button4.Location = new Point(456, 202);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 14;
@@ -204,11 +206,33 @@
             listBox2.Size = new Size(278, 154);
             listBox2.TabIndex = 17;
             // 
+            // button5
+            // 
+            button5.Location = new Point(258, 202);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 18;
+            button5.Text = "Update";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(659, 202);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 19;
+            button6.Text = "Update";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Prozor3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(listBox2);
             Controls.Add(listBox1);
             Controls.Add(button3);
@@ -254,5 +278,7 @@
         private TextBox textBox6;
         private ListBox listBox1;
         private ListBox listBox2;
+        private Button button5;
+        private Button button6;
     }
 }
