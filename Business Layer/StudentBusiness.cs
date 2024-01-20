@@ -1,30 +1,49 @@
 ﻿using Data_Layer.Repository;
 using Shared.Models;
+using Shared.Interfaces;
 
 namespace Business_Layer
 {
-    public class StudentBusiness
+    public class StudentBusiness: IBiznisStudent
     {
-        StudentRepository StudentRepo;
-        public StudentBusiness()
+        private readonly IStudentRepository StudentRepo;
+        public StudentBusiness(IStudentRepository studentRepository)
         {
-            StudentRepo = new StudentRepository();
+            this.StudentRepo = studentRepository ?? throw new ArgumentNullException(nameof(studentRepository));
         }
 
         public List<Student> GetStudents()
         {
             return StudentRepo.GetStudents();
+            
         }
         public int AddStudent(Student student)
         {
-            return StudentRepo.CreateStudent(student);
+            int rowsaffected= this.StudentRepo.CreateStudent(student);
+            if(rowsaffected>0)
+            {
+                return 5;
+            }
+            else { return 6; }
+
         }
         public int DeleteStudent(Student student)
-        {  return StudentRepo.DeleteStudent(student);}
+        {  int rowsaffected= this.StudentRepo.DeleteStudent(student);
+            if (rowsaffected > 0)
+            {
+                return 5;
+            }
+            else { return 6; }
+        }
 
         public int UpdateStudent(Student student)
         {
-            return StudentRepo.UpdateStudent(student);
+            int rowsaffected= this.StudentRepo.UpdateStudent(student);
+            if (rowsaffected > 0)
+            {
+                return 5;
+            }
+            else { return 6; }
         }
     }
 }

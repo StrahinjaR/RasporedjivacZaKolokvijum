@@ -10,6 +10,7 @@ using Shared.Models;
 using System.Data.SqlClient;
 using Shared.Models;
 using System;
+using Shared.Interfaces;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -18,7 +19,7 @@ using System.Threading.Tasks;
 
 namespace Data_Layer.Repository
 {
-    public class UcionicaRepository
+    public class UcionicaRepository : IUcionicaRepository
     {
         public List<Shared.Models.Ucionica> GetUcionicas()
         {

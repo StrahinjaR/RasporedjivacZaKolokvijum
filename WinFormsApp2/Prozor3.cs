@@ -10,18 +10,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business_Layer;
 using Shared;
+using Shared.Interfaces;
 using Shared.Models;
 
 namespace WinFormsApp2
 {
     public partial class Prozor3 : Form
     {
-        public Prozor3()
+        private readonly IBiznisStudent StudentBiznisaaaa;
+        private readonly IBiznisPredmet BiznisPredmet;
+        private readonly IBiznisUcionica BiznisUcionica;
+        private readonly IBiznisUpisani BiznisUpisani;
+
+        public Prozor3(IBiznisStudent studentBiznisaaaa, IBiznisPredmet BiznisPredmet, IBiznisUcionica BiznisUcionica, IBiznisUpisani BiznisUpisani)
         {
+            this.BiznisPredmet = BiznisPredmet;
+            this.BiznisUcionica = BiznisUcionica;
+            this.BiznisUpisani = BiznisUpisani;
+            this.StudentBiznisaaaa = studentBiznisaaaa;
             InitializeComponent();
+
         }
-        StudentBusiness StudentBiznis = new StudentBusiness();
-        PredmetBusiness PredmetBiznis = new PredmetBusiness();
+       
 
         private void Prozor3_Load(object sender, EventArgs e)
         {
@@ -31,7 +41,7 @@ namespace WinFormsApp2
         public void refreshListBox()
         {
             listBox1.Items.Clear();
-            foreach (Student student in StudentBiznis.GetStudents())
+            foreach (Student student in StudentBiznisaaaa.GetStudents())
             {
 
                 listBox1.Items.Add($"{student.Broj_Indexa}  {student.Ime}  {student.Prezime}");
@@ -39,7 +49,7 @@ namespace WinFormsApp2
             }
 
             listBox2.Items.Clear();
-            foreach (Shared.Models.Predmet predmet in PredmetBiznis.GetPredmets())
+            foreach (Shared.Models.Predmet predmet in BiznisPredmet.GetPredmets())
             {
 
                 listBox2.Items.Add($"{predmet.Id}  {predmet.Naziv_Predmeta} - {predmet.Broj_Studenta}");
@@ -61,7 +71,7 @@ namespace WinFormsApp2
                 Ime = textBox2.Text,
                 Prezime = textBox3.Text
             };
-            StudentBiznis.AddStudent(student);
+            StudentBiznisaaaa.AddStudent(student);
             refreshListBox();
         }
 
@@ -71,7 +81,7 @@ namespace WinFormsApp2
             {
                 Broj_Indexa = textBox1.Text,
             };
-            StudentBiznis.DeleteStudent(student);
+            StudentBiznisaaaa.DeleteStudent(student);
             refreshListBox();
         }
 
@@ -83,7 +93,7 @@ namespace WinFormsApp2
                 Naziv_Predmeta = textBox5.Text,
                 Broj_Studenta = Convert.ToInt32(textBox4.Text)
             };
-            PredmetBiznis.CreatePredmet(predmet);
+            BiznisPredmet.CreatePredmet(predmet);
             refreshListBox();
         }
 
@@ -98,7 +108,7 @@ namespace WinFormsApp2
             {
                 Id = Convert.ToInt32(textBox6.Text),
             };
-            PredmetBiznis.DeletePredmet(predmet);
+            BiznisPredmet.DeletePredmet(predmet);
             refreshListBox();
         }
 
@@ -115,7 +125,7 @@ namespace WinFormsApp2
                 Ime = textBox2.Text,
                 Prezime = textBox3.Text
             };
-            StudentBiznis.UpdateStudent(student);
+            StudentBiznisaaaa.UpdateStudent(student);
             refreshListBox();
         }
 
@@ -127,7 +137,7 @@ namespace WinFormsApp2
                 Naziv_Predmeta = textBox5.Text,
                 Broj_Studenta = int.Parse(textBox4.Text)
             };
-            PredmetBiznis.UpdatePredmet(predmet);
+            BiznisPredmet.UpdatePredmet(predmet);
             refreshListBox();
         }
     }

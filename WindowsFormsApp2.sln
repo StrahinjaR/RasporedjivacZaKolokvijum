@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp2", "WinFormsApp2\WinFormsApp2.csproj", "{EB3A08BF-B4EC-445A-81AF-4205451873AF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DD560A84-6E25-4ADE-9350-858F3A3CF3D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentBusinessTest", "StudentBusinessTest\StudentBusinessTest.csproj", "{9F03B165-164A-40F5-9558-7C54AD08FD38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +37,16 @@ Global
 		{EB3A08BF-B4EC-445A-81AF-4205451873AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3A08BF-B4EC-445A-81AF-4205451873AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3A08BF-B4EC-445A-81AF-4205451873AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F03B165-164A-40F5-9558-7C54AD08FD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F03B165-164A-40F5-9558-7C54AD08FD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F03B165-164A-40F5-9558-7C54AD08FD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F03B165-164A-40F5-9558-7C54AD08FD38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F03B165-164A-40F5-9558-7C54AD08FD38} = {DD560A84-6E25-4ADE-9350-858F3A3CF3D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7267E37-2DB2-4B46-BC45-50531EB4AE4F}

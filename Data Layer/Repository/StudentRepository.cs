@@ -15,12 +15,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Shared.Interfaces;
+
 
 
 
 namespace Data_Layer.Repository
 {
-    public class StudentRepository
+    public class StudentRepository :IStudentRepository
     {
         public List<Student> GetStudents()
         {

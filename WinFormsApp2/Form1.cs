@@ -9,21 +9,35 @@ using System.Windows.Forms;
 using System.Linq;
 using System;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using Shared.Interfaces;
 
 namespace WinFormsApp2
 
 {
     public partial class Form1 : Form
     {
-        StudentBusiness student = new StudentBusiness();
-        PredmetBusiness predmet = new PredmetBusiness();
-        UcionicaBusiness ucionica = new UcionicaBusiness();
-        UpisaniPredmeti upisani = new UpisaniPredmeti();
 
-        public Form1()
+        private readonly IBiznisStudent StudentBiznisa;
+        private readonly IBiznisPredmet BiznisPredmet;
+        private readonly IBiznisUcionica BiznisUcionica;
+        private readonly IBiznisUpisani BiznisUpisani;
+
+
+        // IPredmetRepository PredmetRepo = new PredmetRepository();
+        //  IUpisaniPredmetiRepository UpisaniRepo = new UpisaniPredmetiRepository();
+        // IUcionicaRepository UcionicaRepo = new UcionicaRepository();
+
+
+        public Form1(IBiznisStudent StudentBiznisa, IBiznisPredmet BiznisPredmet, IBiznisUcionica BiznisUcionica, IBiznisUpisani BiznisUpisani)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            this.StudentBiznisa = StudentBiznisa;
+            this.BiznisPredmet = BiznisPredmet;
+            this.BiznisUcionica = BiznisUcionica;
+            this.BiznisUpisani  = BiznisUpisani;
+            
             InitializeComponent();
+           
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -101,12 +115,18 @@ namespace WinFormsApp2
                 {
 
                     listBox1.Items.Add(a.Broj_Indexa + " " + a.Ime + " " + a.Prezime);
+                   
+                    System.Diagnostics.Debug.WriteLine(ukupno);
+                   
+
                     i++;
+
                 }
 
             }
 
             ExportToExcel(neophodno, listOfTips, lista, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "Raspored.xlsx"));
+           
         }
         void ExportToExcel(int neophodno, List<Ucionica> listofTips, List<Student> listOfItems, string FilePath)
         {
@@ -140,22 +160,23 @@ namespace WinFormsApp2
 
         public List<Student> GetStudenti()
         {
-            return this.student.GetStudents();
+            
+            return this.StudentBiznisa.GetStudents();
         }
         public int GetUkupn(String a)
         {
-            return this.predmet.Ukupno(a);
+            return this.BiznisPredmet.Ukupno(a);
 
         }
         public List<Ucionica> GetTips(String a)
 
         {
-            return this.ucionica.GetTips(a);
+            return this.BiznisUcionica.GetTips(a);
         }
         public List<UpisanPredmet> GetUpisane(String a)
 
         {
-            return this.upisani.GetUpisane(a);
+            return this.BiznisUpisani.GetUpisane(a);
         }
         private void label3_Click(object sender, EventArgs e)
         {
@@ -169,10 +190,10 @@ namespace WinFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Prozor3 secondForm = new Prozor3();
 
+            Prozor3 secondForm = new Prozor3(StudentBiznisa, BiznisPredmet, BiznisUcionica, BiznisUpisani);
 
-            secondForm.Show();
+        secondForm.Show();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

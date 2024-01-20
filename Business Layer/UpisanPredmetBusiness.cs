@@ -1,4 +1,5 @@
 ﻿using Data_Layer.Repository;
+using Shared.Interfaces;
 using Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -8,21 +9,23 @@ using System.Threading.Tasks;
 
 namespace Business_Layer
 {
-    public class UpisanPredmetBusiness
+    public class UpisanPredmetBusiness: IBiznisUpisani
     {
-        UpisaniPredmeti upisaniPredmet;
-        public UpisanPredmetBusiness()
+        private readonly IUpisaniPredmetiRepository upisaniPredmet;
+        public UpisanPredmetBusiness(IUpisaniPredmetiRepository upisanipredmet)
         {
-            upisaniPredmet = new UpisaniPredmeti();
+            this.upisaniPredmet = upisanipredmet ?? throw new ArgumentNullException(nameof(upisanipredmet));
         }
 
         public List<UpisanPredmet> GetUpisanPredmets()
         {
-            return upisaniPredmet.GetUpisanPredmets();
+            List<UpisanPredmet> upisani = this.upisaniPredmet.GetUpisanPredmets();
+            return upisani;
         }
         public List<UpisanPredmet>GetUpisane(String a)
         {
-            return upisaniPredmet.GetUpisane(a);
+            List<UpisanPredmet> upisani = this.upisaniPredmet.GetUpisane(a);
+            return upisani;
         }
     }
 }
