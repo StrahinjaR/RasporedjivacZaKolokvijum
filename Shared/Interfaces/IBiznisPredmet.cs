@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,7 @@ namespace Shared.Interfaces
 
 
         int UpdatePredmet(Shared.Models.Predmet predmet);
+
+        void UpdateBrojUpisanih();
     }
 }

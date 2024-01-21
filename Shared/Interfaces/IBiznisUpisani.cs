@@ -11,5 +11,11 @@ namespace Shared.Interfaces
     {
         List<UpisanPredmet> GetUpisane(String Upisani);
         List<UpisanPredmet> GetUpisanPredmets();
+
+        List<UpisanPredmet> WHERE(int a);
+
+        int Upis(Shared.Models.UpisanPredmet upisani);
+
+        int DeleteUpisaniPredmet(Shared.Models.UpisanPredmet upisani);
     }
 }

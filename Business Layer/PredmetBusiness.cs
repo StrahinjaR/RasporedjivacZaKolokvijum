@@ -61,6 +61,11 @@ namespace Business_Layer
             }
             else { return 6; }
         }
+
+        public void UpdateBrojUpisanih()
+        {
+            predmetRepo.UpdateBrojUpisanih();
+        }
     }
 }
 

@@ -35,6 +35,7 @@ namespace WinFormsApp2
 
         private void Prozor3_Load(object sender, EventArgs e)
         {
+            BiznisPredmet.UpdateBrojUpisanih();
             refreshListBox();
         }
 
@@ -132,7 +133,7 @@ namespace WinFormsApp2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox3.Text == "")
+            if (textBox6.Text == "")
             {
                 // prikaži poruku da sva polja moraju biti popunjena
                 MessageBox.Show("Morate popuniti polje za id!", "Error",
@@ -142,7 +143,7 @@ namespace WinFormsApp2
             }
             Shared.Models.Predmet predmet = new Shared.Models.Predmet()
             {
-                Id = Convert.ToInt32(textBox6.Text),
+                Id = int.Parse(textBox6.Text),
             };
             BiznisPredmet.DeletePredmet(predmet);
             refreshListBox();
@@ -194,6 +195,69 @@ namespace WinFormsApp2
                 Broj_Studenta = int.Parse(textBox4.Text)
             };
             BiznisPredmet.UpdatePredmet(predmet);
+            refreshListBox();
+        }
+
+        private void RefreshListBox2()
+        {
+            listBox3.Items.Clear();
+            BiznisPredmet.UpdateBrojUpisanih();
+            var ver = BiznisUpisani.WHERE(int.Parse(textBox7.Text));
+            foreach (var items in ver)
+            {
+                listBox3.Items.Add(items.Id+" - "+items.STUDENT_ID);
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (textBox7.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti polje Predmet!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox7.Focus();
+                return;
+            }
+            RefreshListBox2();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (textBox7.Text == "" || textBox8.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti polja Student i Predmet!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox7.Focus();
+                return;
+            }
+            UpisanPredmet upisanPredmet = new UpisanPredmet()
+            {
+                STUDENT_ID = textBox8.Text,
+                PREDMET_ID = int.Parse(textBox7.Text)
+            };
+            BiznisUpisani.Upis(upisanPredmet);
+            RefreshListBox2();
+            refreshListBox();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (textBox7.Text == "" || textBox9.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti polja Id i Predmet!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox7.Focus();
+                return;
+            }
+            UpisanPredmet upisanPredmet = new UpisanPredmet()
+            {
+                Id = int.Parse(textBox9.Text)
+            };
+            BiznisUpisani.DeleteUpisaniPredmet(upisanPredmet);
+            RefreshListBox2();
             refreshListBox();
         }
     }

@@ -27,5 +27,20 @@ namespace Business_Layer
             List<UpisanPredmet> upisani = this.upisaniPredmet.GetUpisane(a);
             return upisani;
         }
+
+        public List<UpisanPredmet> WHERE(int a)
+        {
+            return upisaniPredmet.GetUpisanPredmets().Where(u => u.PREDMET_ID == a).ToList();
+        }
+
+        public int Upis(Shared.Models.UpisanPredmet upisani)
+        {
+            return upisaniPredmet.CreateUpisaniPredmet(upisani);
+        }
+
+        public int DeleteUpisaniPredmet(Shared.Models.UpisanPredmet upisani)
+        {
+            return upisaniPredmet.DeleteUpisaniPredmet(upisani);
+        }
     }
 }

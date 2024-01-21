@@ -11,5 +11,9 @@ namespace Shared.Interfaces
     {
         List<UpisanPredmet> GetUpisane(String Upisani);
         List<UpisanPredmet> GetUpisanPredmets();
+
+        int CreateUpisaniPredmet(Shared.Models.UpisanPredmet upisanPredmet);
+
+        int DeleteUpisaniPredmet(Shared.Models.UpisanPredmet upisanPredmet);
     }
 }

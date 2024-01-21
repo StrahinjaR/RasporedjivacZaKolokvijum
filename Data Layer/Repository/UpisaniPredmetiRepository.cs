@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shared.Interfaces;
+using Shared.Models;
 
 namespace Data_Layer.Repository
 {
@@ -67,6 +68,32 @@ namespace Data_Layer.Repository
             sqlConnection.Close();
 
             return listOfItems;
+        }
+
+        public int CreateUpisaniPredmet(Shared.Models.UpisanPredmet upisanPredmet)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("INSERT INTO UpisaniPredmeti VALUES('{0}',{1})",
+                    upisanPredmet.STUDENT_ID, upisanPredmet.PREDMET_ID);
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+
+        public int DeleteUpisaniPredmet(Shared.Models.UpisanPredmet upisanPredmet)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("DELETE FROM UpisaniPredmeti WHERE Id=@id");
+                sqlCommand.Parameters.AddWithValue("@id", upisanPredmet.Id);
+                return sqlCommand.ExecuteNonQuery();
+            }
         }
     }
 }

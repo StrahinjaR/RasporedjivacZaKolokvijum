@@ -14,5 +14,7 @@ namespace Shared.Interfaces
         int DeletePredmet(Predmet predmet);
         int UpdatePredmet(Predmet predmet);
         int CreatePredmet(Predmet predmet);
+
+        void UpdateBrojUpisanih();
     }
 }

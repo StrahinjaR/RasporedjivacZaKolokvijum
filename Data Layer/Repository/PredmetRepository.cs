@@ -115,6 +115,18 @@ namespace Data_Layer.Repository
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+
+        public void UpdateBrojUpisanih()
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+                SqlCommand sqlCommand = sqlConnection.CreateCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("UPDATE Predmeti\r\nSET Broj_Studenata = (\r\n    SELECT COUNT(DISTINCT STUDENT_ID) \r\n    FROM UpisaniPredmeti \r\n    WHERE Predmeti.Id = UpisaniPredmeti.PREDMET_ID\r\n);");
+                sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
 

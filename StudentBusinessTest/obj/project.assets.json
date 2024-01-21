@@ -2910,24 +2910,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Relja\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\StudentBusinessTest\\StudentBusinessTest.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\StudentBusinessTest\\StudentBusinessTest.csproj",
       "projectName": "StudentBusinessTest",
-      "projectPath": "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\StudentBusinessTest\\StudentBusinessTest.csproj",
-      "packagesPath": "C:\\Users\\Relja\\.nuget\\packages\\",
-      "outputPath": "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\StudentBusinessTest\\obj\\",
+      "projectPath": "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\StudentBusinessTest\\StudentBusinessTest.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\StudentBusinessTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Relja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2941,11 +2936,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
-              "projectPath": "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
+            "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\Business Layer\\Business Layer.csproj"
             },
-            "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
-              "projectPath": "E:\\SI PROJEKAT\\11\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
+            "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj": {
+              "projectPath": "C:\\Users\\Acer\\Desktop\\el finale\\si2023-projekat-tim-vrs\\Data Layer\\Data Layer.csproj"
             }
           }
         }
@@ -3001,7 +2996,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
