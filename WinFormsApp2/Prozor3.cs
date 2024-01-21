@@ -31,7 +31,7 @@ namespace WinFormsApp2
             InitializeComponent();
 
         }
-       
+
 
         private void Prozor3_Load(object sender, EventArgs e)
         {
@@ -65,6 +65,16 @@ namespace WinFormsApp2
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "" ||
+               textBox2.Text == "" ||
+               textBox3.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti sva polja!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Student student = new Student()
             {
                 Broj_Indexa = textBox1.Text,
@@ -77,6 +87,14 @@ namespace WinFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti polje broj indexa!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Student student = new Student()
             {
                 Broj_Indexa = textBox1.Text,
@@ -87,6 +105,16 @@ namespace WinFormsApp2
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (textBox4.Text == "" ||
+               textBox5.Text == "" ||
+               textBox6.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti sva polja!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Shared.Models.Predmet predmet = new Shared.Models.Predmet()
             {
                 Id = Convert.ToInt32(textBox6.Text),
@@ -104,6 +132,14 @@ namespace WinFormsApp2
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (textBox3.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti polje za id!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Shared.Models.Predmet predmet = new Shared.Models.Predmet()
             {
                 Id = Convert.ToInt32(textBox6.Text),
@@ -119,6 +155,16 @@ namespace WinFormsApp2
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "" ||
+               textBox2.Text == "" ||
+               textBox3.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti sva polja!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Student student = new Student()
             {
                 Broj_Indexa = textBox1.Text,
@@ -131,6 +177,16 @@ namespace WinFormsApp2
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (textBox4.Text == "" ||
+               textBox5.Text == "" ||
+               textBox6.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti sva polja!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
             Predmet predmet = new Predmet()
             {
                 Id = int.Parse(textBox6.Text),

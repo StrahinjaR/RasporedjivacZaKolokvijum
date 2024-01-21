@@ -34,17 +34,25 @@ namespace WinFormsApp2
             this.StudentBiznisa = StudentBiznisa;
             this.BiznisPredmet = BiznisPredmet;
             this.BiznisUcionica = BiznisUcionica;
-            this.BiznisUpisani  = BiznisUpisani;
-            
+            this.BiznisUpisani = BiznisUpisani;
+
             InitializeComponent();
-           
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text == "" ||
+                textBox3.Text == "")
+            {
+                // prikaži poruku da sva polja moraju biti popunjena
+                MessageBox.Show("Morate popuniti sva polja!", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Focus();
+                return;
+            }
 
             RefereshListBox();
             GetUkupn(textBox1.Text);
@@ -115,9 +123,9 @@ namespace WinFormsApp2
                 {
 
                     listBox1.Items.Add(a.Broj_Indexa + " " + a.Ime + " " + a.Prezime);
-                   
+
                     System.Diagnostics.Debug.WriteLine(ukupno);
-                   
+
 
                     i++;
 
@@ -126,7 +134,7 @@ namespace WinFormsApp2
             }
 
             ExportToExcel(neophodno, listOfTips, lista, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "Raspored.xlsx"));
-           
+
         }
         void ExportToExcel(int neophodno, List<Ucionica> listofTips, List<Student> listOfItems, string FilePath)
         {
@@ -160,7 +168,7 @@ namespace WinFormsApp2
 
         public List<Student> GetStudenti()
         {
-            
+
             return this.StudentBiznisa.GetStudents();
         }
         public int GetUkupn(String a)
@@ -193,7 +201,7 @@ namespace WinFormsApp2
 
             Prozor3 secondForm = new Prozor3(StudentBiznisa, BiznisPredmet, BiznisUcionica, BiznisUpisani);
 
-        secondForm.Show();
+            secondForm.Show();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

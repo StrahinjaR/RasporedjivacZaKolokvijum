@@ -62,3 +62,19 @@ C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\refint\Data Layer.dll
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.pdb
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\ref\Data Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.deps.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Data Layer.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\bin\Debug\net8.0\Shared.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.AssemblyReference.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.AssemblyInfoInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.AssemblyInfo.cs
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.CoreCompileInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.sourcelink.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.csproj.CopyComplete
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\refint\Data Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\Data Layer.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Data Layer\obj\Debug\net8.0\ref\Data Layer.dll

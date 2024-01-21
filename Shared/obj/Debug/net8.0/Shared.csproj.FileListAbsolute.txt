@@ -50,3 +50,16 @@ C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shar
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\refint\Shared.dll
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.pdb
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\ref\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\bin\Debug\net8.0\Shared.deps.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\bin\Debug\net8.0\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\bin\Debug\net8.0\Shared.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.csproj.AssemblyReference.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.sourcelink.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\refint\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\Shared.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\Shared\obj\Debug\net8.0\ref\Shared.dll

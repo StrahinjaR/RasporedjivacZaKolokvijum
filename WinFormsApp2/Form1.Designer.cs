@@ -32,8 +32,6 @@
             button1 = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
             textBox3 = new TextBox();
             label3 = new Label();
             button2 = new Button();
@@ -76,25 +74,9 @@
             textBox1.TabIndex = 5;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(151, 123);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 7;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(40, 123);
-            label2.Name = "label2";
-            label2.Size = new Size(105, 15);
-            label2.TabIndex = 6;
-            label2.Text = "Naziv Kolokvijuma";
-            // 
             // textBox3
             // 
-            textBox3.Location = new Point(151, 169);
+            textBox3.Location = new Point(151, 111);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 9;
@@ -102,7 +84,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(40, 177);
+            label3.Location = new Point(40, 114);
             label3.Name = "label3";
             label3.Size = new Size(23, 15);
             label3.TabIndex = 8;
@@ -127,8 +109,6 @@
             Controls.Add(button2);
             Controls.Add(textBox3);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(listBox1);
@@ -146,8 +126,6 @@
         private Button button1;
         private Label label1;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label2;
         private TextBox textBox3;
         private Label label3;
         private Button button2;

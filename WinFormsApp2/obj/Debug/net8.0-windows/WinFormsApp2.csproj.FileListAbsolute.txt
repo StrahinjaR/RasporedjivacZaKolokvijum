@@ -176,3 +176,49 @@ C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.
 C:\Users\Acer\Desktop\FINAL\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\ref\WinFormsApp2.dll
 C:\Users\Strahinja\Desktop\Finalna verzija projekta\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Strahinja\Desktop\Finalna verzija projekta\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\WinFormsApp2.exe
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\WinFormsApp2.deps.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\WinFormsApp2.runtimeconfig.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\WinFormsApp2.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\WinFormsApp2.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\EPPlus.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\EPPlus.Interfaces.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Business Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Data Layer.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Shared.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Business Layer.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Data Layer.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\bin\Debug\net8.0-windows\Shared.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.csproj.AssemblyReference.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.Form1.resources
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.Prozor3.resources
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.csproj.GenerateResource.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.AssemblyInfoInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.AssemblyInfo.cs
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.csproj.CoreCompileInputs.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.sourcelink.json
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.csproj.CopyComplete
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\refint\WinFormsApp2.dll
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.pdb
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.genruntimeconfig.cache
+E:\SI PROJEKAT\11\si2023-projekat-tim-vrs\WinFormsApp2\obj\Debug\net8.0-windows\ref\WinFormsApp2.dll
