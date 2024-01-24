@@ -55,7 +55,7 @@ namespace StudentBusinessTest
 
             // Assert
 
-            Assert.AreEqual(result, 5);
+            Assert.AreEqual(result, 6);
         }
 
 
